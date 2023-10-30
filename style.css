@@ -1,0 +1,100 @@
+
+* {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url(./blurry-gradient-haikei\ \(1\).svg);
+    background-size: cover;
+}
+
+#calcTemp {
+    border-radius: 10px;
+    padding: 29px 67px;
+    min-height: 290px;
+    color: white !important;
+    background-image:url(./blob-scene-haikei.svg) !important;
+    background:  no-repeat ;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+label {
+    font-size: 30px;
+    line-height: 78px;
+}
+
+#temp {
+    width: 110px;
+    height: 34px;
+    border-radius: 5px;
+    margin: 12px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+#selected_temp {
+    width: 120px;
+    height: 34px;
+    border-radius: 5px;
+    margin: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+#submit {
+    width: 260px;
+    border-radius: 10px;
+    margin: 10px 0 30px 0;
+    font-size: 18px;
+    height: 40px;
+    background-color: rgb(218 229 220);
+    padding: 5px;
+}
+
+#submit:hover{
+    background-color: rgb(127, 252, 122);
+    cursor: pointer;
+    color: black;
+}
+option:hover{
+    color: black !important;
+}
+#result{
+    font-size: 27px;
+    background: rgb;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: rgb(248, 248, 248);
+}
+@media screen and (max-width:768px) {
+    label{
+        line-height: 50px;
+    }
+    #calcTemp{
+        width: 100%;
+        background-size: cover;
+    }
+    #temp,
+    #selected_temp{
+        width:250px ;
+        margin-left:10px ;
+    }
+    option{
+        width: inherit !important;
+    }
+}
